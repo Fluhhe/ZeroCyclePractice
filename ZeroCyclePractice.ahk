@@ -18,65 +18,60 @@ Seeds := ["9118501347249879928", "1494632126587127636", "-948152678592388736", "
 	
 	WinWait, Minecraft* 1.16.1 - Singleplayer
 	Sleep, 100
-	
-	SetKeyDelay, 0
 
-	Sleep, 50
-	Send, C
-
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 20
 	Send, give @p minecraft:white_bed{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:golden_pickaxe{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:water_bucket{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:cobblestone 64{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:bread 64{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:crying_obsidian 64{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:oak_boat{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:ender_eye 64{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:ender_pearl 16{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, give @p minecraft:white_bed 15{Enter}
 
-	Sleep, 50
+	Sleep, 20
 	Send, /
-	Sleep, 100
+	Sleep, 70
 	Send, setblock ~ ~ ~ minecraft:end_portal{Enter}
 
 	Sleep, 200
