@@ -3,23 +3,24 @@ SetWorkingDir %A_ScriptDir%
 
 Seeds := ["9118501347249879928", "1494632126587127636", "-948152678592388736", "-6019937585072417708", "359683117781737573", "3371459828524886771"]
 KeyDelay = 20 ; Increase if you don't receive items
-
+EnterWorldDelay = 100; Use 1000 with chunkmod
+ExitWorldDelay = 500
 
 #IfWinActive, Minecraft
 `::
-    send {Esc}+{Tab}{Enter} 
-    Sleep, 500
+	SetKeyDelay, 0
+	ControlSend, ahk_parent, {Esc}{Tab 9}{Enter}, Minecraft* 1.16.1 - Singleplayer 
+    Sleep, ExitWorldDelay
 
     Random, index, 1, % Seeds.MaxIndex()
-    SetKeyDelay, 0
     Send, {Tab}{Enter}
-    Send, {Tab}{Tab}{Tab}{Enter}{Tab}{Tab}{Enter}{Enter}{Enter}{Tab}{Enter}{Tab}{Tab}{Tab}{Enter}{Tab}{Tab}{Tab}
+    Send, {Tab 3}{Enter}{Tab 2}{Enter 3}{Tab}{Enter}{Tab 3}{Enter}{Tab 3}
     Send, % Seeds[index]
     Send, {Enter}
 	
 	WinWait, Minecraft* 1.16.1 - Singleplayer
 	WinActivate, Minecraft* 1.16.1 - Singleplayer
-	Sleep, 100
+	Sleep, EnterWorldDelay
 
 	Sleep, KeyDelay
 	Send, /
